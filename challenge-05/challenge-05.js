@@ -36,7 +36,9 @@ var arr = [1,'Higor',true,null,NaN]
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+function returnArr (){
+    return arr
+}
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -52,7 +54,29 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+function book(bookName) {
+    var allBooks = {
+        'PedraFilosofal': {
+            quantidadePaginas: 180,
+            autor: 'JK ROLLING',
+            editora: 'nova'
+        },
+        'CamaraSecreta': {
+            quantidadePaginas: 210,
+            autor: 'JK ROLLING',
+            editora: 'nova'
+        },
+        'EnigmaDoPrincipe': {
+            quantidadePaginas: 180,
+            autor: 'JK ROLLING',
+            editora: 'nova'
+        }
+    };
+
+    return !bookName ? allBooks : (allBooks[bookName])
+
+
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
